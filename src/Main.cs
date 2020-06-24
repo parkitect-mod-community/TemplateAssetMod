@@ -17,12 +17,8 @@ using System.Linq;
 
 namespace Template
 {
-    public class Main : IMod
+    public class Main : AssetMod
     {
-        public string Path
-        {
-            get { return ModManager.Instance.getModEntries().First(x => x.mod == this).path; }
-        }
 
         public void onEnabled()
         {
@@ -32,11 +28,5 @@ namespace Template
         public void onDisabled()
         {
         }
-
-        public string Name => "Template Mod";
-
-        public string Description => "";
-
-        string IMod.Identifier => "Template";
     }
 }

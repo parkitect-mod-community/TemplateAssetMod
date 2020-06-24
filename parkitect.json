@@ -16,6 +16,10 @@
     "Parkitect",
     "UnityEngine.PhysicsModule"
   ],
+  "sources": [
+    "./src/*.cs",
+    "./src/**/*.cs"
+  ],
   "assets": [
   ]
 }
